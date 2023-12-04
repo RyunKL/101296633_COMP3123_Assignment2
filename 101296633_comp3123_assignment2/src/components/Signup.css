@@ -1,0 +1,54 @@
+body {
+    background-color: #f0e68c; /* Khaki color */
+  }
+  
+  .signup {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #90ee90; /* Light Green color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #2e8b57; /* Sea Green color */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #4682b4; /* Steel Blue color */
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #008080; /* Teal color */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  p, a {
+    color: #2e8b57; /* Sea Green color */
+    margin: 10px 0;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

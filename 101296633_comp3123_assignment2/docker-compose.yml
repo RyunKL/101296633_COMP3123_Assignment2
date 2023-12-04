@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    container_name: my-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+    networks:
+      - my-network
+
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: comp3123-assignment2
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    networks:
+      - my-network
+    environment:
+      MONGO_URI: mongodb://mongo:27017/comp3123-assignment2
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  mongodb-data:
